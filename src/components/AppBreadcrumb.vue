@@ -14,6 +14,7 @@
 <script>
 import { onMounted, ref } from 'vue'
 import router from '@/router'
+import routeNames from '../router/route-names'
 
 export default {
   name: 'AppBreadcrumb',
@@ -24,7 +25,7 @@ export default {
       return router.currentRoute.value.matched.map((route) => {
         return {
           active: route.path === router.currentRoute.value.fullPath,
-          name: route.name,
+          name: routeNames[route.name] || route.name,
           path: `${router.options.history.base}${route.path}`,
         }
       })

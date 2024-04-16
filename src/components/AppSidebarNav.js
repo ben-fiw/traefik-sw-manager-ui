@@ -82,8 +82,7 @@ const AppSidebarNav = defineComponent({
         ? h(
             RouterLink,
             {
-              to: item.to,
-              custom: true,
+              to: { name: item.to },
             },
             {
               default: (props) =>

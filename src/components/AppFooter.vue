@@ -1,14 +1,10 @@
 <template>
   <CFooter class="px-4">
     <div>
-      <a href="https://coreui.io" target="_blank">CoreUI</a>
-      <span class="ms-1"
-        >&copy; {{ new Date().getFullYear() }} creativeLabs.</span
-      >
+      <a href="mailto://bf@elio-systems.com" target="_blank">Ben Fischer</a>
     </div>
     <div class="ms-auto">
-      <span class="me-1" target="_blank">Powered by</span>
-      <a href="https://coreui.io/vue">CoreUI for Vue</a>
+      <span class="me-1" target="_blank">Demo shop manager</span>
     </div>
   </CFooter>
 </template>
